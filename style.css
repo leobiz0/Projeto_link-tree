@@ -1,3 +1,18 @@
+div{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
 img {
     width: 88px;
+}
+
+strong  {
+    color: #05ba17;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
