@@ -1,16 +1,36 @@
-body {
-    background-color: oklch(0.21 0.006 285.885);
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
-div{
-    background-color: oklch(0.274 0.006 286.033);
-    border-radius: 10px;
-    margin: 150px auto;
-    padding: 30px;
-    width: 50%;
-    font-family: "Inter", sans-serif;
+:root {
+    --dark-gray: #1f1f1f;
+    --grey: #333333;
+    --light-grey: oklch(0.37 0.013 285.805);
+    --neon-green: #c4f82a;
+    --white: #fff;
+    --black: #000;
+}
+
+body {
+    background-color: var(--dark-gray);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    background-color: var(--grey);
+    border-radius: 12px;
+    padding: 40px;
+    width: 384px;
     text-align: center;
-    color: #fff;
+    color: var(--white);
 }
 
 img {
@@ -18,13 +38,29 @@ img {
     height: 88px;
     object-fit: cover;
     border-radius: 50%;
+    margin-bottom: 24px;
 }
 
-strong  {
-    color: #05ba17;
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    margin-bottom: 4px;
 }
 
-ul {
+strong {
+    color: var(--neon-green);
+    font-size: 14px;
+    line-height: 150%;
+}
+
+p {
+    margin-block: 24px;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+ul, li {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -34,13 +70,14 @@ a {
     display: block;
     margin: 10px 0;
     padding: 10px;
-    border-radius: 5px;
-    background-color: oklch(0.37 0.013 285.805);
+    border-radius: 12px;
+    background-color: var(--light-grey);
     cursor: pointer;
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
 }
 
 a:hover {
-    background-color: #05ba17;
+    background-color: var(--neon-green);
+    color: var(--black);
 }
