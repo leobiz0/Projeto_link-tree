@@ -10,14 +10,13 @@
 :root {
     --dark-gray: #1f1f1f;
     --grey: #333333;
-    --light-grey: oklch(0.37 0.013 285.805);
     --neon-green: #c4f82a;
     --white: #fff;
-    --black: #000;
+    --black: #141414;
 }
 
 body {
-    background-color: var(--dark-gray);
+    background-color: var(--black);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -25,7 +24,7 @@ body {
 }
 
 div {
-    background-color: var(--grey);
+    background-color: var(--dark-gray);
     border-radius: 12px;
     padding: 40px;
     width: 384px;
@@ -68,16 +67,19 @@ ul, li {
 
 a {
     display: block;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 12px;
-    background-color: var(--light-grey);
+    margin-bottom: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--grey);
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
     text-decoration: none;
     color: var(--white);
 }
 
 a:hover {
     background-color: var(--neon-green);
-    color: var(--black);
+    color: var(--dark-gray);
+    transition: .4s;
 }
